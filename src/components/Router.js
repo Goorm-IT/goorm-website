@@ -2,6 +2,8 @@ import Header from "components/Header";
 import Home from "routes/Home";
 import Members from "routes/Members";
 import Projects from "routes/Projects";
+import Admin from "routes/Admin";
+
 import {
   HashRouter as Router,
   Switch,
@@ -11,8 +13,8 @@ import {
 
 function AppRouter() {
   return (
-    <Router>
-      <Header />
+    <Router basename="/" hashType="noslash">
+      {/* <Header /> */}
       <Switch>
         <Route exact path="/">
           <Home />
@@ -22,6 +24,9 @@ function AppRouter() {
         </Route>
         <Route exact path="/members">
           <Members />
+        </Route>
+        <Route exact path="/admin">
+          <Admin />
         </Route>
         <Redirect from="*" to="/" />
       </Switch>

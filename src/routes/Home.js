@@ -1,25 +1,54 @@
 import Graph from "components/Graph";
+import { useRef } from "react";
+import cloudImg from "resources/cloud_background.png";
+import "styles/Home.css";
 
 function Home() {
-  return (
-    <div className="wrapper">
-      <div className="imgWrapper">
-        <div className="mainImage"></div>
+  const nav = useRef(false);
 
-        {/* <Graph /> */}
+  const onClick = () => {
+    nav.current.style.display =
+      nav.current.style.display === "none" ? "" : "none";
+    console.log();
+  };
+
+  return (
+    <div className="home">
+      <div className="home__background">
+        <img className="background__image" />
       </div>
-      <button className="bar" type="button">
-        <div className="icon bar_icon">
-          <span className="l1 line"></span>
-          <span className="l2 line"></span>
-          <span className="l3 line"></span>
-          <small className="menu">menu</small>
+      <div className="home__logo">
+        <div className="logo__text">
+          <span>goorm</span>
         </div>
-        {/* <div className="icon close_icon">
-          <span className="l1"></span>
-          <span className="l2"></span>
-        </div> */}
-      </button>
+        <div className="logo__slogan">
+          <svg>
+            <text x="0%" y="1rem">
+              안양대학교 IT동아리
+            </text>
+          </svg>
+        </div>
+      </div>
+      <button onClick={onClick}>hamburger</button>
+      <div ref={nav} style={{ display: "none" }}>
+        <ul>
+          <li>
+            <a href="http://localhost:3000/">HOME</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/#projects">PROJECT</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/#members">MEMBERS</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/#recruit">RECRUIT</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/#admin">ADMIN</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
