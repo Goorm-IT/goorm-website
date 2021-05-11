@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-width: 768px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/src/image/main2x.png');
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  min-width: 768px;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list__item {
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.nav-list__item text {
+  fill: #dbdbdb;
+  font-size: 25px;
+  font-family: RobotoSlab-Regular, Roboto Slab;
+}
+
+.main__slogan {
+  position: absolute;
+  left: 40vw;
+  top: 60vh;
+}
+
+.contact-btn {
+  border: 2px solid #ffffffcc;
+  width: 160px;
+  height: 38px;
+  padding: 12.5px 6.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  bottom: 110px;
+}
+
+.contact__text {
+  text-transform: uppercase;
+  color: #dbdbdb;
+}
+
+.main__description {
+  color: #dbdbdb;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
