@@ -22,9 +22,16 @@ main {
   min-width: 768px;
   width: 100vw;
   height: 100vh;
-  background-image: url('/src/image/main2x.png');
+  /* background-image: url('/src/image/main2x.png');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
 }
 
 nav {
@@ -32,25 +39,52 @@ nav {
   position: absolute;
   top: 40px;
   width: 100%;
+  height: 33px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav:hover {
+  height: 225px;
+  background: #eff2f90d;
+  border: #707070;
+}
+nav div {
+  display: none;
+}
+nav:hover div {
+  display: block;
+  height: 40px;
 }
 
 .nav-list {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  height: 33px;
 }
 
 .nav-list__item {
-  color: #dbdbdb;
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Roboto Slab', serif;
+}
+
+.nav-list__item a {
+  display: block;
+  height: 33px;
 }
 
 .nav-list__item text {
   fill: #dbdbdb;
   font-size: 25px;
   font-family: RobotoSlab-Regular, Roboto Slab;
+}
+
+svg:hover text {
+  fill: #838fb9;
 }
 
 .main__slogan {
