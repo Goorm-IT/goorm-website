@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-width: 768px;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('/src/image/main2x.png');
+  background-size: cover;
+  background-position: center; */
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+nav {
+  min-width: 768px;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 33px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav:hover {
+  height: 225px;
+  background: #eff2f90d;
+  border: #707070;
+}
+nav div {
+  display: none;
+}
+nav:hover div {
+  display: block;
+  height: 40px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 33px;
+}
+
+.nav-list__item {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.nav-list__item a {
+  display: block;
+  height: 33px;
+}
+
+.nav-list__item text {
+  fill: #dbdbdb;
+  font-size: 25px;
+  font-family: RobotoSlab-Regular, Roboto Slab;
+}
+
+svg:hover text {
+  fill: #838fb9;
+}
+
+.main__slogan {
+  position: absolute;
+  left: 40vw;
+  top: 60vh;
+}
+
+.contact-btn {
+  border: 2px solid #ffffffcc;
+  width: 160px;
+  height: 38px;
+  padding: 12.5px 6.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  bottom: 110px;
+}
+
+.contact__text {
+  text-transform: uppercase;
+  color: #dbdbdb;
+}
+
+.main__description {
+  color: #dbdbdb;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
