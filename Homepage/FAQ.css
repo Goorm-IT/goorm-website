@@ -1,0 +1,28 @@
+/* img {
+    float: center;
+    justify-content: center;
+    align-items: center;
+    width: 1532px;
+    height: 700px;
+    padding : 100px 194px 100px 184px;
+} */
+.a{
+    float: left;
+    font-size: 30px;
+    padding: 50px 864px 86px 335px;
+}
+.b{
+    float: left;
+    font-size: 30px;
+    padding: 0px 864px 86px 335px;
+}
+.c{
+    float: left;
+    font-size: 30px;
+    padding: 0px 864px 86px 335px;
+}
+.d{
+    float: left;
+    font-size: 30px;
+    padding: 0px 864px 86px 335px;
+}

@@ -1,0 +1,11 @@
+header{
+    top: 117px;
+    left: 156px;
+    width: 1484px;
+    height: 700px;
+    transform: matrix(0.99, 0.03, -0.03, 1, 0, 0);
+    background: transparent url('img/그룹 18520.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
