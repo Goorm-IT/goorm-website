@@ -140,17 +140,17 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
 }
 .what-can-you-get .container .row:nth-child(1) {
   position: absolute;
-  top: 180px;
+  top: 20%;
   left: -70px;
 }
 .what-can-you-get .container .row:nth-child(2) {
   position: absolute;
-  top: 400px;
+  top: 43%;
   right: -100px;
 }
 .what-can-you-get .container .row:nth-child(3) {
   position: absolute;
-  bottom: 160px;
+  bottom: 18%;
   left: -70px;
 }
 .what-can-you-get .row .text-group {
@@ -203,6 +203,8 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   font-family: 'nanum-square-ac', sans-serif;
   font-size: 24px;
   color: var(--color-black);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 .faq .box:last-child {
   height: 270px;
@@ -214,6 +216,10 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
 }
 .faq .box .box__answer {
   margin-left: 100px;
+}
+.faq .box:nth-child(4) .box__answer span::before {
+  content: '';
+  margin-left: 30px;
 }
 .faq img {
   position: absolute;
