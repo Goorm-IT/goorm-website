@@ -7,6 +7,9 @@
   --background-black: #272727;
   --color-black: #191919;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   color: #dbdbdb;
   font-size: 16px;
@@ -14,7 +17,6 @@ body {
   line-height: 1.4;
   font-family: NanumSquare, sans-serif;
   margin: auto;
-  height: 5000px;
 }
 img {
   display: block;
@@ -23,7 +25,7 @@ a {
   text-decoration: none;
 }
 .inner {
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   position: relative;
 }
