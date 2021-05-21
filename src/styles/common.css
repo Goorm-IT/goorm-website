@@ -1,0 +1,29 @@
+/* COMMON */
+:root {
+  --color-main: #838fb9;
+  --color-white: #dbdbdb;
+  --background-color: #eff2f9;
+  --background-white: #fcfcfc;
+  --background-black: #272727;
+  --color-black: #191919;
+}
+body {
+  color: #dbdbdb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: NanumSquare, sans-serif;
+  margin: auto;
+  height: 5000px;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}

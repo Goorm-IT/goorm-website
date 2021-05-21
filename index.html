@@ -2,75 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta name="description" content="Goorm-it official website" />
     <title>Goorm</title>
-    <link href="src/styles/main.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
-    <script src="src/js/index.js"></script>
+
+    <!-- 나눔스퀘어 -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/@kfonts/nanum-square-ac/index.css" />
+    <!-- Roboto, Roboto Slab -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- reset.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link href="./src/styles/common.css" rel="stylesheet" />
+    <link href="./src/styles/main.css" rel="stylesheet" />
+
+    <script src="src/js/main.js"></script>
   </head>
   <body>
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-list__item">
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="146"
-              height="33"
-              viewBox="0 0 146 33"
-            >
-              <defs></defs>
-              <text class="a" transform="translate(0 26)">
-                <tspan x="0" y="0">INTRODUCE</tspan>
-              </text>
-            </svg>
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="113"
-              height="33"
-              viewBox="0 0 113 33"
-            >
-              <defs></defs>
-              <text class="a" transform="translate(0 26)">
-                <tspan x="0" y="0">PROJECT</tspan>
-              </text>
-            </svg>
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#">
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="98"
-              height="33"
-              viewBox="0 0 98 33"
-            >
-              <defs></defs>
-              <text class="a" transform="translate(0 26)">
-                <tspan x="0" y="0">REPORT</tspan>
-              </text>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <ul class="nav">
+          <li class="nav__item">
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)" class="main-item"> INTRODUCE </a></li>
+              <li><a href="javascript:void(0)" class="sub-item"> About Goorm </a></li>
+              <li><a href="javascript:void(0)" class="sub-item"> FAQ </a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)" class="main-item"> PROJECT </a></li>
+              <li><a href="javascript:void(0)" class="sub-item"> Our Project </a></li>
+              <li><a href="javascript:void(0)" class="sub-item"> Member List </a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)" class="main-item"> OTHER </a></li>
+              <li><a href="javascript:void(0)" class="sub-item"> 회비 내역 </a></li>
+              <li><a href="javascript:void(0)" class="sub-item"> Recruit </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    <main>
-      <video autoplay muted loop id="main-video">
-        <source src="src/image/background_all_15sec.mp4" type="video/mp4">
+    <!-- MAIN -->
+    <section class="main">
+      <video autoplay muted loop class="main__video">
+        <source src="./src/images/main_background_video_s.mp4" type="video/mp4" />
       </video>
-      <span class="contact-btn">
-          <a class="contact__text" href="#">contact us</a>
+
+      <div class="contact">
+        <a href="javascript:void(0)">CONTACT US</a>
+        <span class="contact__description">
+          구름처럼 자유로운 도전 활동을<br />
+          지향하는 교내 동아리 입니다.
         </span>
-      </span>
-      <span class="main__description">
-        구름처럼 자유로운 도전 활동을<br> 지향하는 교내 동아리 입니다.
-      </span>
-    </main>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="inner">
+        <div class="about__container">
+          <div class="about__title">About GOORM</div>
+          <div class="about__description">열정과 다양한 아이디어를 바탕으로 자신의 전공에 상관없이 하늘에 떠있는 구름처럼 <span>자유롭게 아이템을 모색</span>하고 부원들과 <span>함께 프로젝트를 수행</span>하며 "같이의 가치" 를 알아가는 안양대학교 창업동아리 입니다</div>
+          <img src="./src/images/about_icon.png" class="about__icon" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT CAN YOU GET -->
+    <section class="what-can-you-get">
+      <div class="inner">
+        <div class="container">
+          <div class="row">
+            <div class="text-group">
+              <div class="text-group__title">1인 1프로젝트 목표</div>
+              <img src="./src/images/what_can_you_get_goal_description.png" alt="종강 이후 방학 기간을 활용하여 동아리 내 팀 단위의 프로젝트에 참여하여, 팀 단위 프로젝트 수행능력 향상을 목표로 합니다" class="text-group__description" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="text-group">
+              <div class="text-group__title">외부 활동을 통한 스펙 향상</div>
+              <img src="./src/images/what_can_you_get_spec_description.png" alt="공모전, 개발자 밋업과 같은 다양한 행사 일정을 동아리 노션이나 동아리 카카오톡에 수시로 게시하며, 희망하는 부원들과 함께 외부 활동에 참여 합니다" class="text-group__description" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="text-group">
+              <div class="text-group__title">기술 습득과 지식 공유</div>
+              <img src="./src/images/what_can_you_get_learn_description.png" alt="백준, 프로그래머스 등 온라인 저지를 활용한 개발자들의 1일1문제 러닝을 통해 알고리즘 문제 수행 능력 향상 및 풀이 방법을 공유하며 다양한 풀이 방법을 습득합니다" class="text-group__description" />
+            </div>
+          </div>
+        </div>
+        <div class="icons"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="inner">
+        <div class="wrapper">
+          <div class="box">
+            <div class="box__question">Q. 실력이 뛰어난 사람만 지원할 수 있나요?</div>
+            <div class="box__answer">A. NO! 열정만 가지고 있다면 실력에 상관없이 누구나 가능합니다.</div>
+          </div>
+
+          <div class="box">
+            <div class="box__question">Q. 동아리에 들어가면 모든 것을 다 알려 주나요?</div>
+            <div class="box__answer">A. NO! 저희는 학원이 아닙니다. 스터디 및 Q&A로 "스스로 공부할 수 있는 방법"을 터득합니다.</div>
+          </div>
+
+          <div class="box">
+            <div class="box__question">Q. 테스트에 합격해야만 가입이 되나요?</div>
+            <div class="box__answer">A. NO! 합격에 크게 관여하지 않습니다. 도전 하십시오!</div>
+          </div>
+
+          <div class="box">
+            <div class="box__question">Q. 강화캠퍼스 학생도 지원이 가능한가요?</div>
+            <div class="box__answer">
+              A. YES! 강화 캠퍼스 학생도 가입 가능합니다. <br />
+              다만 캠퍼스 위치 특성상 신청자 본인의 상황을 고려하여 신청해 주시기 바랍니다.
+            </div>
+          </div>
+          <img src="./src/images/FAQ.png" alt="FAQ" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="project">
+      <div class="inner"></div>
+    </section>
+
+    <!-- CHART -->
+    <section class="chart">
+      <div class="chart-image"></div>
+    </section>
+
+    <!-- RECRUIT -->
+    <section class="recruit">
+      <img src="./src/images/ticket1.png" alt="ticket1" class="ticket1" />
+      <img src="./src/images/ticket2.png" alt="ticket1" class="ticket2" />
+
+      <div class="text-group">
+        <div class="name">회장 한태민</div>
+        <div class="phone-number">010-8283-2667</div>
+        <div class="email">taemain9705@gmail.com</div>
+      </div>
+    </section>
   </body>
 </html>
