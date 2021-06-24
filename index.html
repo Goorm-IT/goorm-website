@@ -34,31 +34,31 @@
     <link href="./src/styles/common.css" rel="stylesheet" />
     <link href="./src/styles/main.css" rel="stylesheet" />
 
-    <script src="src/js/main.js"></script>
+    <script defer src="src/js/main.js"></script>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <ul class="nav">
+      <ul class="nav" style="background-color: transparent">
         <li class="nav__item">
           <ul class="sub-menu">
-            <li><a href="javascript:void(0)" class="main-item"> INTRODUCE </a></li>
-            <li><a href="javascript:void(0)" class="sub-item"> About Goorm </a></li>
-            <li><a href="javascript:void(0)" class="sub-item"> FAQ </a></li>
+            <li class="main-item"><a href="#about"> INTRODUCE </a></li>
+            <li class="sub-item hide"><a href="#about"> About Goorm </a></li>
+            <li class="sub-item hide"><a href="#faq"> FAQ </a></li>
           </ul>
         </li>
         <li class="nav__item">
           <ul class="sub-menu">
-            <li><a href="javascript:void(0)" class="main-item"> PROJECT </a></li>
-            <li><a href="javascript:void(0)" class="sub-item"> Our Project </a></li>
-            <li><a href="javascript:void(0)" class="sub-item"> Member List </a></li>
+            <li class="main-item"><a href="#project"> PROJECT </a></li>
+            <li class="sub-item hide"><a href="#project"> Our Project </a></li>
+            <li class="sub-item hide"><a href="javascript:void(0)"> Member List </a></li>
           </ul>
         </li>
         <li class="nav__item">
           <ul class="sub-menu">
-            <li><a href="javascript:void(0)" class="main-item"> OTHER </a></li>
-            <li><a href="javascript:void(0)" class="sub-item"> 회비 내역 </a></li>
-            <li><a href="javascript:void(0)" class="sub-item"> Recruit </a></li>
+            <li class="main-item"><a href="javascript:void(0)"> OTHER </a></li>
+            <li class="sub-item hide"><a href="javascript:void(0)"> 회비 내역 </a></li>
+            <li class="sub-item hide"><a href="#recruit"> Recruit </a></li>
           </ul>
         </li>
       </ul>
@@ -71,7 +71,7 @@
       </video>
 
       <div class="contact">
-        <a href="javascript:void(0)">CONTACT US</a>
+        <a href="mailto:taemin9705@gmail.com">CONTACT US</a>
         <span class="contact__description">
           구름처럼 자유로운 도전 활동을<br />
           지향하는 교내 동아리 입니다.
@@ -80,7 +80,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="about__container">
         <div class="about__title">About GOORM</div>
         <div class="about__description">열정과 다양한 아이디어를 바탕으로 자신의 전공에 상관없이 하늘에 떠있는 구름처럼 <span>자유롭게 아이템을 모색</span>하고 부원들과 <span>함께 프로젝트를 수행</span>하며 "같이의 가치" 를 알아가는 안양대학교 창업동아리 입니다</div>
@@ -114,7 +114,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="faq">
+    <section id="faq" class="faq">
       <div class="wrapper">
         <div class="box">
           <div class="box__question">Q. 실력이 뛰어난 사람만 지원할 수 있나요?</div>
@@ -142,18 +142,59 @@
       </div>
     </section>
 
-    <!-- PROJECT -->
-    <section class="project">
-      <div class="inner"></div>
+    <!-- PROJECTS -->
+    <section id="project" class="projects">
+      <div class="wrapper">
+        <div class="box">
+          <div class="project__head">
+            <div class="logo"></div>
+            <div class="title">Daenora</div>
+          </div>
+
+          <div class="project__img">
+            <div class="project__description">대학생을 위한 학기 관리 어플리케이션</div>
+            <a class="share-btn" href="https://github.com/Goorm-IT/Daenora" target="_blank"></a>
+          </div>
+          <div class="project__contributor">
+            <div class="contributor__icon"></div>
+            <div class="contributor__name">한태민, 이진성, 김민진</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="project__head">
+            <div class="logo"></div>
+            <div class="title">Goorm Official Website</div>
+          </div>
+
+          <div class="project__img">
+            <div class="project__description">동아리&nbsp;Goorm의 공식&nbsp;페이지를&nbsp;제작합니다</div>
+            <a class="share-btn" href="https://github.com/Goorm-IT/goorm-website" target="_blank"></a>
+          </div>
+          <div class="project__contributor">
+            <div class="contributor__icon"></div>
+            <div class="contributor__name">최형진, 이지민, 이무성</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="project__head">
+            <div class="logo"></div>
+            <div class="title">Any Project</div>
+          </div>
+          <div class="project__img">
+            <div class="project__description">당신의 상상력을 발휘해보세요!</div>
+            <a class="share-btn" href="https://github.com/Goorm-IT" target="_blank"></a>
+          </div>
+          <div class="project__contributor">
+            <div class="contributor__icon"></div>
+            <div class="contributor__name">최대 4명</div>
+          </div>
+        </div>
+        <div class="more-info">* 자세한 내용은 프로젝트 담당자에게 문의 바랍니다</div>
+      </div>
     </section>
 
-    <!-- CHART -->
-    <!-- <section class="chart">
-      <div class="chart-image"></div>
-    </section> -->
-
     <!-- RECRUIT -->
-    <section class="recruit">
+    <section id="recruit" class="recruit">
       <img src="./src/images/ticket1.png" alt="ticket1" class="ticket1" />
       <img src="./src/images/ticket2.png" alt="ticket1" class="ticket2" />
 
