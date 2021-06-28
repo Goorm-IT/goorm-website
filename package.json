@@ -4,7 +4,6 @@
   "description": "Goorm official Website",
   "main": "/public/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build --no-minify  index.html -d public",
     "start": "parcel index.html -d public"
   },
