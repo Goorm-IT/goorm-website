@@ -38,11 +38,11 @@ header .nav .nav__item .sub-menu li a:hover {
 }
 header .nav .nav__item .sub-menu li.main-item {
   font-size: 2.5rem;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 header .nav .nav__item .sub-menu li.sub-item {
   font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   display: block;
 }
@@ -124,7 +124,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   height: 157px;
   line-height: 2;
   font-size: 2.6rem;
-  font-family: 'nanum-square-ac', sans-serif;
+  font-family: "nanum-square-ac", sans-serif;
 }
 .about .about__container .about__description span {
   font-weight: 700;
@@ -148,22 +148,22 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   position: relative;
 }
 .what-can-you-get .row:nth-child(1) .goal-icon {
-  background-image: url('../images/goal_icon1.png');
+  background-image: url("../images/goal_icon1.png");
 }
 .what-can-you-get .row:nth-child(2) {
   flex-direction: row-reverse;
 }
 .what-can-you-get .row:nth-child(2) .goal-icon {
-  background-image: url('../images/goal_icon2.png');
+  background-image: url("../images/goal_icon2.png");
   /* position: absolute; */
 }
 .what-can-you-get .row:nth-child(3) .goal-icon {
-  background-image: url('../images/goal_icon3.png');
+  background-image: url("../images/goal_icon3.png");
 }
 .what-can-you-get .row .goal-line {
   /* width: 630px;
   height: 340px; */
-  background-image: url('../images/goal_line.png');
+  background-image: url("../images/goal_line.png");
   height: 400px;
   width: 1px;
   color: #707070;
@@ -218,7 +218,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
 .what-can-you-get .row .text-group .text-group__title {
   color: var(--color-black);
   font-size: 2.8rem;
-  font-family: 'nanum-square-ac', sans-serif;
+  font-family: "nanum-square-ac", sans-serif;
   font-weight: 700;
   height: 31px;
   margin-bottom: 20px;
@@ -253,7 +253,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   background-color: #fff;
   /* flex-direction: column; */
   /* justify-content: center; */
-  font-family: 'nanum-square-ac', sans-serif;
+  font-family: "nanum-square-ac", sans-serif;
   font-size: 2.4rem;
   color: var(--color-black);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -308,7 +308,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   opacity: 0;
 }
 .faq .box:nth-child(4) .box__answer span::before {
-  content: '';
+  content: "";
   margin-left: 30px;
 }
 .faq .next__btn {
@@ -318,7 +318,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   right: 3rem;
   top: calc(50% - 25px);
 
-  background: url('../images/right_arrow.png');
+  background: url("../images/right_arrow.png");
 }
 .faq .next__btn:hover {
   cursor: pointer;
@@ -373,13 +373,13 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   margin: auto;
 }
 .projects .to-left-btn {
-  background: url('../images/left_triangle.png');
+  background: url("../images/left_triangle.png");
   margin-left: 30px;
   position: absolute;
   left: -8rem;
 }
 .projects .to-right-btn {
-  background: url('../images/right_triangle.png');
+  background: url("../images/right_triangle.png");
   margin-right: 30px;
   position: absolute;
   right: -8rem;
@@ -451,13 +451,13 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
 }
 
 .projects .box:nth-child(1) .project__img {
-  background-image: url('../images/project_daenora_main.png');
+  background-image: url("../images/project_daenora_main.png");
 }
 .projects .box:nth-child(2) .project__img {
-  background-image: url('../images/project_goorm_main.png');
+  background-image: url("../images/project_goorm_main.png");
 }
 .projects .box:nth-child(3) .project__img {
-  background-image: url('../images/project_any_main.png');
+  background-image: url("../images/project_any_main.png");
 }
 .projects .project__img-back {
   transform: rotateY(-180deg);
@@ -470,7 +470,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   bottom: -20px;
   right: 10px;
   border-radius: 50%;
-  background-image: url('../images/project_share_btn.png');
+  background-image: url("../images/project_share_btn.png");
   background-size: cover;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -484,7 +484,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
 .projects .project__contributor .contributor__icon {
   width: 16px;
   height: 16px;
-  background-image: url('../images/project_contributor_icon.png');
+  background-image: url("../images/project_contributor_icon.png");
   background-size: cover;
   margin-left: 20px;
   margin-right: 10px;
@@ -570,7 +570,7 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   position: relative;
 }
 .recruit .ticket-box {
-  width: 80%;
+  width: 50%;
   /* height: 90vh; */
   position: absolute;
   left: 0;
@@ -586,31 +586,25 @@ header .nav .nav__item .sub-menu li:nth-child(2) {
   width: 90rem;
   max-width: 100rem;
   min-width: 80rem;
-  left: 0;
-  /* right: 0; */
-  top: 20%;
-  /* bottom: 0; */
+  left: calc(50% - 60rem);
+  top: calc(50% - 250px);
   margin: auto;
   z-index: 1;
-  /* position: absolute; */
 }
 .recruit .ticket2 {
   width: 90rem;
   max-width: 100rem;
   min-width: 80rem;
-  /* left: 0; */
-  right: 0;
-  /* top: 0; */
-  bottom: 20%;
+  right: calc(50% - 70rem);
+  bottom: calc(50% - 350px);
   margin: auto;
-  /* position: absolute; */
 }
 .recruit .text-group {
   text-align: right;
   position: absolute;
   right: 50px;
   bottom: 50px;
-  font-family: 'nanum-square-ac', sans-serif;
+  font-family: "nanum-square-ac", sans-serif;
   font-size: 1.6rem;
 }
 .recruit .text-group .name {
